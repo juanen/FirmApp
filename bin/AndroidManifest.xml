@@ -1,0 +1,102 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uoc.jezamora.tfc.firmapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".pre.SplashActi"
+            android:label="@string/title_activity_login"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pre.RegisterActi"
+            android:label="REGISTRO"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme" >
+        </activity>
+        <activity
+            android:name=".pre.LoginActi"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".pre.MenuActi"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".pre.CauseListActi"
+            android:label="Propuestas Abiertas"
+            android:theme="@style/theme" >
+        </activity>
+        <activity
+            android:name=".pre.CauseDetailActi"
+            android:label="Apoyar propuesta"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme" >
+        </activity>
+        <activity
+            android:name=".pre.UserModActi"
+            android:label="Modificación Perfil"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme" >
+        </activity>
+        <activity
+            android:name=".pre.FirmaActi"
+            android:label="Firmar"
+            android:theme="@style/theme" >
+        </activity>
+        <activity
+            android:name=".pre.ShareActi"
+            android:label="Compartir"
+            android:launchMode="singleInstance"
+            android:theme="@style/theme" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ShareActi"
+                    android:scheme="app" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pre.ContactActi"
+            android:label="Contacta"
+            android:theme="@style/theme" >
+        </activity>
+        <activity
+            android:name=".pre.CondiActi"
+            android:label="Condiciones Legales"
+            android:theme="@style/theme" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,54 @@
+<uoc.jezamora.tfc.firmapp.utils.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+
+    <!-- News Feed Button -->
+
+    <Button
+        android:id="@+id/btnFirmMenu"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_addcause"
+        android:text="@string/signMenu" />
+
+    <!-- Friends Button -->
+
+    <Button
+        android:id="@+id/btnProfileMenu"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_myprofile"
+        android:text="@string/profileMenu" />
+
+    <!-- Messages Button -->
+
+    <Button
+        android:id="@+id/btnDownMenu"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_downfirm"
+        android:text="@string/dropMenu" />
+
+    <!-- Places Button -->
+
+    <Button
+        android:id="@+id/btnContactMenu"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_contact"
+        android:text="@string/contactMenu" />
+
+    <!-- Events Button -->
+
+    <Button
+        android:id="@+id/btnLaw"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_law"
+        android:text="@string/lawMenu" />
+    <!-- Events Button -->
+
+    <Button
+        android:id="@+id/btnLogout"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_logout"
+        android:text="@string/logoutMenu" />
+
+</uoc.jezamora.tfc.firmapp.utils.DashboardLayout>

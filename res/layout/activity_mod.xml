@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/vwName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/txtUserNameReg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:minWidth="200dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/vwSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/surname" />
+
+        <EditText
+            android:id="@+id/txtSurnameReg"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:minWidth="200dp" >
+        </EditText>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TableRow android:id="@+id/TableRow1" >
+
+                <TextView
+                    android:id="@+id/vwNif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nif" />
+
+                <TextView
+                    android:id="@+id/vwFecN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/born" />
+            </TableRow>
+
+            <TableRow android:id="@id/TableRow1" >
+
+                <EditText
+                    android:id="@+id/txtNifReg"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hnif"
+                    android:inputType="text"
+                    android:maxLength="9"
+                    android:minWidth="200dp" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/txtFecNacReg"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:maxLength="10"
+                    android:minWidth="200dp" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/btnCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_calendar"
+                    android:clickable="true" 
+                    android:contentDescription="@string/born"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/vwProvince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/province" />
+
+        <EditText
+            android:id="@+id/txtProvinceReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:minWidth="200dp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/vwMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emailR" />
+
+        <EditText
+            android:id="@+id/txtEmailReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:minWidth="200dp" >
+        </EditText>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TableRow android:id="@+id/TableRow01" >
+            </TableRow>
+
+            <TableRow android:id="@+id/TableRow02" >
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_save"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
