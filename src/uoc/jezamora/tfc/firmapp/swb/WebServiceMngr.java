@@ -3,7 +3,9 @@
  * @Date 2012/12 - V1.0
  *
  * Activity connect web service
+ *
  */
+ 
 package uoc.jezamora.tfc.firmapp.swb;
 
 import java.util.ArrayList;
@@ -30,7 +32,7 @@ public class WebServiceMngr {
 
 	// constructor
 	public WebServiceMngr() {
-		jsonParser = new JSONParser();
+		jsonParser = new JSONParser(); 
 	}
 
 	/**
