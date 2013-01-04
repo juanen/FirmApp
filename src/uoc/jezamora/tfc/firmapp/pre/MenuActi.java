@@ -30,8 +30,9 @@ public class MenuActi extends Activity implements OnClickListener {
 	private Button btnLogOut;
 	private Button btnProfile;
 	private Button btnDelete;
-	private Button btnContact;
+	private Button btnAddCause;
 	private Button btnCondi;
+	private Button btnMail;
 
 	private Session session;
 	private PrefsMngr myprefs = null;
@@ -53,16 +54,17 @@ public class MenuActi extends Activity implements OnClickListener {
 		btnCauses = (Button) findViewById(R.id.btnFirmMenu);
 		btnLogOut = (Button) findViewById(R.id.btnLogout);
 		btnDelete = (Button) findViewById(R.id.btnDownMenu);
-		btnContact = (Button) findViewById(R.id.btnContactMenu);
+		btnAddCause = (Button) findViewById(R.id.btnaddnewCause);
 		btnCondi = (Button) findViewById(R.id.btnLaw);
+		btnMail = (Button) findViewById(R.id.btnMailNew);
 
 		btnProfile.setOnClickListener(this);
 		btnCauses.setOnClickListener(this);
 		btnLogOut.setOnClickListener(this);
 		btnDelete.setOnClickListener(this);
-		btnContact.setOnClickListener(this);
+		btnAddCause.setOnClickListener(this);
 		btnCondi.setOnClickListener(this);
-
+		btnMail.setOnClickListener(this);
 	}
 
 	@Override
@@ -94,9 +96,10 @@ public class MenuActi extends Activity implements OnClickListener {
 			startActivity(myIntentMenu);
 
 			break;
-		// Delete Menu
-		case R.id.btnContactMenu:
-			final Intent myIntentLog1 = new Intent(this, ContactActi.class);
+		// add cause Menu
+		case R.id.btnaddnewCause:
+			final Intent myIntentLog1 = new Intent(this,
+					RegisterCauseActi.class);
 			startActivity(myIntentLog1);
 			break;
 		// Legal conditions Menu
@@ -104,7 +107,7 @@ public class MenuActi extends Activity implements OnClickListener {
 			final Intent myIntentLaw = new Intent(this, CondiActi.class);
 			startActivity(myIntentLaw);
 			break;
-		//drop firm Menu
+		// drop firm Menu
 		case R.id.btnDownMenu:
 
 			Intent myDownMenu = new Intent(this, CauseListActi.class);
@@ -121,14 +124,13 @@ public class MenuActi extends Activity implements OnClickListener {
 		// Logout Menu
 		case R.id.btnLogout:
 
-			//clean preferences
+			// clean preferences
 			this.myprefs.setEmail("?");
 			this.myprefs.setIdUser("?");
 			this.myprefs.setName("?");
 			this.myprefs.save();
 
 			final Intent myIntentLogO = new Intent(this, LoginActi.class);
-
 
 			AlertDialog.Builder alertbox = new AlertDialog.Builder(this);
 			alertbox.setMessage(this.getString(R.string.menu_logout));
@@ -147,6 +149,12 @@ public class MenuActi extends Activity implements OnClickListener {
 					});
 			alertbox.show();
 
+			break;
+		// Profile Menu
+		case R.id.btnMailNew:
+			final Intent myIntentLog2 = new Intent(this,
+					ContactActi.class);
+			startActivity(myIntentLog2);
 			break;
 
 		}

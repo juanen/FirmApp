@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/vwName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nameCause" />
+
+        <EditText
+            android:id="@+id/txtCauseName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:minWidth="200dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/vwdescc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descCause" />
+
+        <EditText
+            android:id="@+id/txtDescCause"
+            android:layout_width="252dp"
+            android:layout_height="118dp"
+            android:inputType="text"
+            android:minWidth="200dp" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <TableRow android:id="@+id/TableRow1" >
+
+                <TextView
+                    android:id="@+id/vwNif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dBegin" />
+            </TableRow>
+
+            <TableRow android:id="@id/TableRow1" >
+
+                <EditText
+                    android:id="@+id/txtFecBegin"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:maxLength="10"
+                    android:minWidth="200dp" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/btnCalendarB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_calendar"
+                    android:clickable="true"
+                    android:contentDescription="@string/born" />
+            </TableRow>
+
+            <TableRow android:id="@+id/TableRow2" >
+
+                <TextView
+                    android:id="@+id/vwFecN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dEnd" />
+            </TableRow>
+
+            <TableRow android:id="@id/TableRow2" >
+
+                <EditText
+                    android:id="@+id/txtFecEnd"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:maxLength="10"
+                    android:minWidth="200dp" >
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/btnCalendarE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_calendar"
+                    android:clickable="true"
+                    android:contentDescription="@string/born" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical" > 
+
+            <TableRow android:id="@id/TableRow1" >
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/vwFirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tFirm" />
+
+        <EditText
+            android:id="@+id/txtTotFirm"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:minWidth="200dp" >
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnaddnewCause2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_newcause"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

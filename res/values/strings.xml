@@ -15,6 +15,11 @@
     <string name="email">email</string>
     <string name="login">Log in</string>
     <string name="reg">Registrate en firmApp</string>
+    <string name="nameCause">Nombre Causa:</string>
+    <string name="descCause">Descripción Causa:</string>
+    <string name="dBegin">Inicio Causa:</string>
+    <string name="dEnd">Final Causa:</string>
+    <string name="tFirm">Firmas necesarias:</string> 
     <string name="name">Nombre:</string>
     <string name="surname">Apellidos:</string>
     <string name="nif">NIF:</string>
@@ -67,8 +72,12 @@
     <string name="twit_updated">Twitter actualizado!</string>
     <string name="msg_share">: Apoya esta propuesta a través de firmApp</string>
     <string name="msg_modi">Desea guardar los cambios?</string>
+    <string name="msg_newc">Alta dada de alta en el sistema.Gracias.</string>
     <string name="user_name">Debe informar el nombre de usuario</string>
     <string name="remember">Recuerde</string>
     <string name="firm_dup">Ya ha apoyado esta propuesta anteriormente</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="btnnewcause">Crear una Causa</string>
 
 </resources>

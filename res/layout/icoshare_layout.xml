@@ -9,13 +9,15 @@
     <Button
         android:id="@+id/btnFacebook"
         style="@style/DashboardButton"
-        android:drawableTop="@drawable/btn_facebook" />
+        android:drawableTop="@drawable/btn_facebook" 
+        android:text="@string/facebook" />
 
     <!-- Facebook Button -->
 
     <Button
         android:id="@+id/btnTwitter"
         style="@style/DashboardButton"
-        android:drawableTop="@drawable/btn_twitter" />
+        android:drawableTop="@drawable/btn_twitter" 
+        android:text="@string/twitter" />
 
 </uoc.jezamora.tfc.firmapp.utils.DashboardLayout>

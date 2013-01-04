@@ -53,6 +53,7 @@
 
             <Button
                 android:id="@+id/btnaddfirm"
+                android:background="#FFFFFF"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/btn_addfirm" />
@@ -67,6 +68,7 @@
 
             <Button
                 android:id="@+id/btndelfirm"
+                android:background="#FFFFFF"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/btn_deletefirm" />

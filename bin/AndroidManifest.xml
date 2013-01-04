@@ -4,7 +4,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="10"
+        android:minSdkVersion="8"
         android:targetSdkVersion="15" />
 
     <uses-permission android:name="android.permission.INTERNET" >
@@ -52,6 +52,7 @@
         <activity
             android:name=".pre.CauseListActi"
             android:label="Propuestas Abiertas"
+            android:screenOrientation="portrait"
             android:theme="@style/theme" >
         </activity>
         <activity
@@ -69,12 +70,14 @@
         <activity
             android:name=".pre.FirmaActi"
             android:label="Firmar"
+            android:screenOrientation="portrait"
             android:theme="@style/theme" >
         </activity>
         <activity
             android:name=".pre.ShareActi"
             android:label="Compartir"
             android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
             android:theme="@style/theme" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -90,11 +93,19 @@
         <activity
             android:name=".pre.ContactActi"
             android:label="Contacta"
+            android:screenOrientation="portrait"
             android:theme="@style/theme" >
         </activity>
         <activity
             android:name=".pre.CondiActi"
             android:label="Condiciones Legales"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme" >
+        </activity>
+        <activity
+            android:name=".pre.RegisterCauseActi"
+            android:label="Alta nueva Propuesta"
+            android:screenOrientation="portrait"
             android:theme="@style/theme" >
         </activity>
     </application>

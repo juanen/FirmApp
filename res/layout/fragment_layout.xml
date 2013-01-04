@@ -4,7 +4,7 @@
     android:layout_weight="1"
     android:background="#f8f9fe" >
 
-    <!-- News Feed Button -->
+    <!-- Firm Cause Button -->
 
     <Button
         android:id="@+id/btnFirmMenu"
@@ -12,7 +12,7 @@
         android:drawableTop="@drawable/btn_addcause"
         android:text="@string/signMenu" />
 
-    <!-- Friends Button -->
+    <!-- Profile Button -->
 
     <Button
         android:id="@+id/btnProfileMenu"
@@ -20,7 +20,7 @@
         android:drawableTop="@drawable/btn_myprofile"
         android:text="@string/profileMenu" />
 
-    <!-- Messages Button -->
+    <!-- Drop firm Button -->
 
     <Button
         android:id="@+id/btnDownMenu"
@@ -28,13 +28,13 @@
         android:drawableTop="@drawable/btn_downfirm"
         android:text="@string/dropMenu" />
 
-    <!-- Places Button -->
+    <!-- New Cause Button -->
 
     <Button
-        android:id="@+id/btnContactMenu"
+        android:id="@+id/btnaddnewCause"
         style="@style/DashboardButton"
-        android:drawableTop="@drawable/btn_contact"
-        android:text="@string/contactMenu" />
+        android:drawableTop="@drawable/btn_addnewcause"
+        android:text="@string/btnnewcause" />
 
     <!-- Events Button -->
 

@@ -1,9 +1,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/FooterBar" >
-    <TextView android:background="@drawable/back_book"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#606060"
-            android:gravity="center"
-            android:paddingTop="10dip"/>
+
+    <TextView
+        android:layout_width="248dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back_book"
+        android:gravity="center"
+        android:paddingTop="10dip"
+        android:textColor="#606060" />
+
+    <Button
+        android:id="@+id/btnMailNew"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/back_book"
+        android:contentDescription="@string/title"
+        android:drawableTop="@drawable/btn_mail"
+        android:paddingLeft="15dip"
+        android:scaleType="center" />
+
 </LinearLayout>

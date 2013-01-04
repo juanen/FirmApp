@@ -13,7 +13,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import uoc.jezamora.tfc.firmapp.swb.WebServiceMngr;;
+import uoc.jezamora.tfc.firmapp.ent.Cause;
+import uoc.jezamora.tfc.firmapp.swb.WebServiceMngr;
+
+;
 
 public class CauseMngr {
 
@@ -31,8 +34,42 @@ public class CauseMngr {
 	public static String KEY_NED = "total_need";
 	private static String ACTI = "1";
 	private static String NO_ACTI = "14";
+	private static String ERR_NEW = "20";
 
 	JSONArray causes = null;
+
+	/*
+	 * Create cause
+	 */
+	public String newCause(Cause cause) {
+
+		WebServiceMngr wsMngr = new WebServiceMngr();
+		String state = null;
+
+		JSONObject json = wsMngr.newCause(cause.getnameC(), cause.getdescC(),
+				cause.getbeginC(), cause.getendC(), cause.gettotalC());
+		try {
+			if (!json.getString(KEY_SUCCESS).equals("")
+					|| !json.getString(KEY_ERROR).equals("")) {
+				String res = json.getString(KEY_SUCCESS);
+				if (res.equals(ACTI)) {
+
+					//JSONObject json_user = json.getJSONObject("cause");
+
+				} else if ((json.getString(KEY_ERROR).equals(ERR_NEW))) {
+
+					state = json.getString(KEY_ERROR_MSG);
+					return state;
+
+				}
+			} else {
+				state = json.getString(KEY_ERROR_MSG);
+			}
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return state;
+	}
 
 	/*
 	 * List of causes
@@ -78,7 +115,7 @@ public class CauseMngr {
 							map.put(KEY_NED, ned);
 							causeList.add(map);
 						}
-						
+
 					}
 
 				} else if (json.getString(KEY_ERROR).equals(NO_ACTI)) {
@@ -162,7 +199,7 @@ public class CauseMngr {
 					causeList = null;
 				}
 			} else
-				return causeList=null;
+				return causeList = null;
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}

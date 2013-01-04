@@ -22,6 +22,7 @@ public class WebServiceMngr {
 
 	private static String login_tag = "login";
 	private static String register_tag = "register";
+	private static String registercause_tag = "reg_cause";
 	private static String list_cause = "listcause";
 	private static String list_mycause = "mylistcause";
 	private static String load_user = "loaduser";
@@ -52,7 +53,28 @@ public class WebServiceMngr {
 		// Log.e("JSON", json.toString());
 		return json;
 	}
-
+	/**
+	 * function add new cause
+	 * 
+	 * @param name
+	 * @param desc
+	 * @param fecB
+	 * @param fecE
+	 * @param Tot
+	 * */
+	public JSONObject newCause(String name, String desc, String dBeg,
+			String dEnd, String Tot) {
+		// Building Parameters
+		List<NameValuePair> params = new ArrayList<NameValuePair>();
+		params.add(new BasicNameValuePair("tag", registercause_tag));
+		params.add(new BasicNameValuePair("name", name));
+		params.add(new BasicNameValuePair("desc", desc));
+		params.add(new BasicNameValuePair("dbeg", dBeg));
+		params.add(new BasicNameValuePair("dend", dEnd));
+		params.add(new BasicNameValuePair("tneed", Tot));
+		JSONObject json = jsonParser.makeHttpRequest(URL, "POST", params);
+		return json;
+	}
 	/**
 	 * function add new user
 	 * 
